@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crypto Exchange Blockchain</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__account">
+                <div class="burger">
+                    <a href="#menu" class="burger_menu" onclick="myFunction()"><img src="img/header/burger.png" alt="BURGER"></a>
+                </div>
+                <div class="header__logo">
+                    <a href="" class="header__logo_img">
+                        <img src="img/header/logo.png" alt="Логотип">
+                        <div class="header__logo_text title">
+                            ZARVIS
+                        </div>
+                    </a>
+                </div>
+                <div class="header__hello">
+                    <h1 class="header__hello_top title">
+                        Hello Kruluz Utsman
+                    </h1>
+                    <div class="header__hello_down">
+                        <span class="hidden">4.45 pm</span> 19 Jan 2022
+                    </div>
+                </div>
+                <div class="header__search">
+                    <form>
+                        <img src="img/header/search.png" alt="Search">
+                        <input type="text" placeholder="Search" class="srch">
+                    </form>
+                </div>
+                <div class="header__about">
+                    <div class="header__about_single">
+                        <a href="#"><img src="img/header/single.png" alt="single"></a>
+                    </div>
+                    <div class="header__about_text text">
+                        <a href="#">Kruluz Utsman</a>
+                    </div>
+                    <div class="header__about_photo">
+                        <a href="#"><img src="img/header/photo.png" alt="photo"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__sidebar" id="menu">
+                <nav class="header__menu">
+                    <ul class="menu__list">
+                        <li class="menu__item active"><a href="" class="menu_link"><img src="img/header/Icons.png" alt="dashboard">Dashboard <img src="img/header/dot.png" alt="dot"></a></li>
+                        <li class="menu__item"><a href="" class="menu_link"><img src="img/header/iconexchange.png" alt="exchange">Exchange</a></li>
+                        <li class="menu__item"><a href="" class="menu_link"><img src="img/header/libraryicons.png" alt="Library">Library</a></li>
+                        <li class="menu__item"><a href="" class="menu_link"><img src="img/header/shedulesicons.png" alt="schedules">Schedules</a></li>
+                        <li class="menu__item"><a href="" class="menu_link"><img src="img/header/payoutsicons.png" alt="payouts">Payouts</a></li>
+                        <li class="menu__item"><a href="" class="menu_link"><img src="img/header/settingsicons.png" alt="Settings">Settings</a></li>
+                    </ul>
+                    <a href="#menu" id="exit" class="exit" onclick="exit()"><img src="img/header/exit.png" alt="exit"></a>
+                </nav>
+                <div class="header__footer">
+                        <img src="img/header/Iconsafe.png" alt="Iconsafe" class="iconsafe">
+                        <h2 class="title">
+                            Keep you safe!
+                        </h2>
+                        <p>
+                            Update your security password, keep your account safe!
+                        </p>
+                        <h2 class="title">
+                            Update Privacy
+                        </h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="coin">
+            <div class="coin__container__first">
+                <div class="coin__items">
+                    <div class="coin__item">
+                        <div class="coin__item_img">
+                            <img src="img/main/btc.png" alt="BTC">
+                        </div>
+                        <div class="coin__item_content">
+                            <div class="content_data">
+                                <div class="data_usd">BTC <img src="img/main/too.png" alt="too"> USD</div>
+                                <div class="data_number">9784.79</div>
+                            </div>
+                            <div class="data_img"><img src="img/main/Yes.png" alt="yes" class="max"></div>
+                        </div>
+                        <div class="content_img"><img src="img/main/tooup.png" alt="UP">7.2%</div>
+                    </div>
+                    <div class="coin__item">
+                        <div class="coin__item_img">
+                            <img src="img/main/ltc.png" alt="Litecoin">
+                        </div>
+                        <div class="coin__item_content">
+                            <div class="content_data">
+                                <div class="data_usd">LTC <img src="img/main/too.png" alt="too"> USD</div>
+                                <div class="data_number">8741.19</div>
+                            </div>
+                            <div class="data_img"><img src="img/main/no.png" alt="yes" class="max"></div>
+                        </div>
+                        <div class="content_img red"><img src="img/main/toodown.png" alt="UP">5.2%</div>
+                    </div>
+                    <div class="coin__item hidden" id="lock">
+                        <div class="coin__item_img">
+                            <img src="img/main/eth.png" alt="Eterium">
+                        </div>
+                        <div class="coin__item_content">
+                            <div class="content_data">
+                                <div class="data_usd">ETH <img src="img/main/too.png" alt="too"> USD</div>
+                                <div class="data_number">4567.16</div>
+                            </div>
+                            <div class="data_img"><img src="img/main/Yes.png" alt="yes" class="max"></div>
+                        </div>
+                        <div class="content_img"><img src="img/main/tooup.png" alt="UP">6.5%</div>
+                    </div>
+                    <div class="coin__item hidden" id="lock-lock" >
+                        <div class="coin__item_img">
+                            <img src="img/main/bnb.png" alt="Binance">
+                        </div>
+                        <div class="coin__item_content">
+                            <div class="content_data">
+                                <div class="data_usd">BNB <img src="img/main/too.png" alt="too"> USD</div>
+                                <div class="data_number">6547.79</div>
+                            </div>
+                            <div class="data_img"><img src="img/main/Yes.png" alt="yes" class="max"></div>
+                        </div>
+                        <div class="content_img"><img src="img/main/tooup.png" alt="UP">9.5%</div>
+                    </div>
+                </div>
+            <div class="see">
+                <a onclick="see()"><img src="img/main/arrow.png" alt="arrow" id="live"></a>
+                <a onclick="hide()"><img src="img/main/arrow2.png" alt="arrow" id="death"></a>
+                    <span id="live-text">See More</span>
+                    <span id="death-text">Hide</span>
+            </div>
+            </div>
+        </section>
+        <section class="market">
+            <div class="market__container">
+                <div class="market__block">
+                    <div class="market__overview">
+                        <div class="market__time">
+                            <div class="market__time_item">
+                                <div class="item__head title">Market Overview</div>
+                                <div class="item__footer text">7.2141,997.5 (25%)</div>
+                            </div>
+                            <div class="market__time_nav">
+                                <ul class="item_lists">
+                                    <li class="item_list all">ALL</li>
+                                    <li class="item_list hidden">1M</li>
+                                    <li class="item_list hidden">6M</li>
+                                    <li class="item_list hidden">1Y</li>
+                                    <li class="item_list hidden">YTD</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="number">
+                            <span class="number__number">
+                                <img src="img/main/dot.png" alt="dot">$376
+                            </span>
+                            <span class="number__number">
+                                <img src="img/main/bdot.png" alt="dot">Buy
+                            </span>
+                            <span class="number__number ">
+                                <img src="img/main/dot.png" alt="dot">Sell
+                            </span>
+                        </div>
+                        <div class="market__img">
+                            <img src="img/main/market.png" alt="market">
+                        </div>
+                    </div>
+                    <div class="market__balance">
+                            <div class="market__balance_block">
+                                <div class="market__time_balance">
+                                    <div class="item__head time_balance title"><span>Balances</span><img src="img/main/balance.png" alt="balance" class="zero"></div>
+                                    <div class="item__footer time_balance"><img src="img/main/$.png" alt="dollar "><span>Dollar</span></div>
+                                    <div class="item__footer blue">9784.79</div>
+                                </div>
+                            </div>
+                            <div class="market__img">
+                                <img src="img/main/card.png" alt="card">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="market__container">
+            <div class="market__block">
+                <div class="market__overview">
+                    <div class="market__btc">
+                        <div class="market__time_item">
+                            <div class="item__head title">Recent Activities</div>
+                        </div>
+                        <div class="btc-coin">
+                            <ul class="btc-lists">
+                                <li class="btc-list"><img src="img/main/btc.png" alt="btc"></li>
+                                <li class="btc-list">Bitcoin</li>
+                                <li class="btc-list hidden">10:45:16 AM</li>
+                                <li class="btc-list hidden">+1545,00</li>
+                                <li class="btc-list tex">Completed</li>
+                            </ul>
+                        </div>
+                        <div class="btc-coin">
+                            <ul class="btc-lists">
+                                <li class="btc-list"><img src="img/main/eth.png" alt="btc"></li>
+                                <li class="btc-list">Ethereum</li>
+                                <li class="btc-list hidden">09:15:31 AM</li>
+                                <li class="btc-list hidden">+5649,00</li>
+                                <li class="btc-list tex fuck">Painding</li>
+                            </ul>
+                        </div>
+                        <div class="btc-coin">
+                            <ul class="btc-lists">
+                                <li class="btc-list"><img src="img/main/ltc.png" alt="btc"></li>
+                                <li class="btc-list">LTC</li>
+                                <li class="btc-list hidden">09:01:12 AM</li>
+                                <li class="btc-list hidden">+4547,00</li>
+                                <li class="btc-list tex">Completed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="market__balance">
+                    <div class="market__balance_block">
+                        <div class="market__time_balance">
+                            <div class="item__head time_balance title">Team</div>
+                            <div class="item__footer time_balance bkgone"><img src="img/footer/admin.png" alt="dollar "><span>Total Admin<br>6</span></div>
+                            <div class="item__footer time_balance bkgtwo"><img src="img/footer/team.png" alt="dollar "><span>Team Member<br>12</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    'use strict'
+    function myFunction() {
+        document.getElementById("menu").style.left = "0";
+        document.getElementById("menu").style.transition = "left 0.3s ease 0s";
+        document.getElementById("exit").style.display = "block";
+    }
+    function exit() {
+        document.getElementById("menu").style.left = "-100%";
+        document.getElementById("exit").style.display = "none";
+    }
+    function see(){
+        document.getElementById('lock').style.display = 'block';
+        document.getElementById('lock-lock').style.display = 'block';
+        document.getElementById('live').style.display = 'none';
+        document.getElementById('death').style.display = 'inline';
+        document.getElementById('live-text').style.display = 'none';
+        document.getElementById('death-text').style.display = 'inline';
+    }
+    function hide(){
+        document.getElementById('lock').style.display = 'none';
+        document.getElementById('lock-lock').style.display = 'none';
+        document.getElementById('live').style.display = 'inline';
+        document.getElementById('death').style.display = 'none';
+        document.getElementById('live-text').style.display = 'inline';
+        document.getElementById('death-text').style.display = 'none';
+    }
+</script>
+</body>
+</html>
